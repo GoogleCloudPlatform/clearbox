@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clearbox"
+version = "0.0.1"
+description = "Library to tune the ranking of Vertex AI Search."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "IPython",
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "scikit-learn",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache 2.0 License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+  "absl-py",
+]
